@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closing experiment</title>
+</head>
+<body>
+    <h1>Experiment ModarFunker!!</h1>
+    <form>
+
+        <label for="co">Hotel status today:</label><br>
+        <input type="number" id="checkouts" placeholder="checkouts">
+        <input type="number" id="stayovers" placeholder="stay"> <br><br>
+
+        <label for="dnd">Enter DND rooms reparated by comma (,)</label><br>
+        <input type="text" id="dnd" placeholder="dnd"> <br><br>
+
+        <label for="nsr">Enter NSR rooms reparated by comma (,)</label><br>
+        <input type="text" id="nsr" placeholder="nsr"> <br><br>
+
+        <label for="b2b">Enter B2B rooms reparated by comma (,)</label><br>
+        <input type="text" id="b2b" placeholder="b2b"> <br><br>
+
+        <label for="nscl">Enter NSCL (No show clean) rooms reparated by comma (,)</label><br>
+        <input type="text" id="nscl" placeholder="nscl"> <br><br>
+
+        <label for="clean">Enter clean rooms reparated by comma (,)</label><br>
+        <input type="text" id="clean" placeholder="clean rooms"> <br><br>
+
+        <label for="day_use">Enter day use rooms reparated by comma (,)</label><br>
+        <input type="text" id="day_use" placeholder="day use rooms"> <br><br>
+
+        <label style="color: red" id="no_toga_file"></label><br>
+        <label for="file1">Upload excel file created from toga:</label><br>
+        <input type="file" id="toga_file" name="file"><br><br>
+
+        <label style="color: red" id="no_1c_file"></label><br>
+        <label for="file2">Upload 1C daily room count file:</label><br>
+        <input type="file" id="1c_file" name="file"><br><br>
+
+
+        <input type="button" value="Find Mismatch" onclick="findMismatch()">
+
+        <h3 style="color: red" id="mismatch"></h3>
+    </form>
+<script src="../static/JS/test.js"></script>
+</body>
+</html>
+
