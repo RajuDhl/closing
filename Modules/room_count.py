@@ -3,8 +3,6 @@ import pandas as pd
 # starting of each section in 1c
 start = ['101', '220', '219']
 
-file = 'rc.xlsx'
-
 
 def room_count(rc_file):
     dataframe = pd.read_excel(rc_file)

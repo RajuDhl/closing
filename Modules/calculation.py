@@ -8,10 +8,12 @@ def calculate(room_count_file, toga_file, total_co, total_stay, dnd, nsr, b2b, n
     error = []
     result_from_toga = toga.toga(toga_file)
     result_from_1c = room_count.room_count(room_count_file)
-    for item in dnd:
-        result_from_1c[int(item)] = 'dnd'
-    for item in nsr:
-        result_from_1c[int(item)] = 'nsr'
+    if len(dnd) > 0:
+        for item in dnd:
+            result_from_1c[int(item)] = 'dnd'
+    if len(nsr) > 0:
+        for item in nsr:
+            result_from_1c[int(item)] = 'nsr'
 
     diff_values = {key: result_from_1c[key] for key in result_from_1c if
                    key in result_from_toga and result_from_1c[key] != result_from_toga[key]}

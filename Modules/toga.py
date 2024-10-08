@@ -1,7 +1,5 @@
 import pandas as pd
 
-file = 'toga.xlsx'
-
 
 def toga(toga_file):
     dataframe = pd.read_excel(toga_file, header=None)
